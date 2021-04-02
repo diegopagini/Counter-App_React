@@ -21,7 +21,7 @@ const [letras, numeros] = retornaArreglo();
 console.log(letras);
 console.log(numeros);
 
-const userState = (valor) => {
+const usState = (valor) => {
 	return [
 		valor,
 		() => {
@@ -29,6 +29,6 @@ const userState = (valor) => {
 		},
 	];
 };
-const [nombre, setNombre] = userState('Goku');
+const [nombre, setNombre] = usState('Goku');
 console.log(nombre);
 setNombre();

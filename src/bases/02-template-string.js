@@ -13,7 +13,7 @@ ${1 + 1}
 `;
 console.log(algoConBT);
 
-function getSaludo(nombre) {
+export function getSaludo(nombre = 'Diego') {
 	return `Hola ${nombre}`;
 }
 

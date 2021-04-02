@@ -14,7 +14,7 @@ const saludar2 = (nombre) => `Hola ${nombre}`;
 // saludar2 = 30; Error
 console.log(saludar2('Vegeta'));
 
-const getUser = () => {
+export const getUser = () => {
 	return {
 		uid: 'ABC123',
 		userName: 'El_Tony_Stark',
@@ -28,5 +28,5 @@ const getUser2 = () => ({ uid: 'ABC123', userName: 'El_Tony_Stark' });
 console.log(getUser2());
 
 // Probando
-const getUsuarioActivo = (nombre) => ({ uid: 'ABC', username: nombre });
+export const getUsuarioActivo = (nombre) => ({ uid: 'ABC', username: nombre });
 console.log(getUsuarioActivo('Hulk'));
