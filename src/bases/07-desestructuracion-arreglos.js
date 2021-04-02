@@ -14,7 +14,7 @@ console.log(p1);
 console.log(p2);
 console.log(p3);
 
-const retornaArreglo = () => {
+export const retornaArreglo = () => {
 	return ['ABC', 123];
 };
 const [letras, numeros] = retornaArreglo();
