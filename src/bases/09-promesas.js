@@ -1,5 +1,5 @@
 /** @format */
-import { getHeroeById } from './bases/08-import-export';
+import { getHeroeById } from './08-import-export';
 
 // // Las promesas por naturaleza son asyncronas
 // const promesa = new Promise((resolve, reject) => {
@@ -18,7 +18,7 @@ import { getHeroeById } from './bases/08-import-export';
 // // Cuando es reject
 // promesa.catch((err) => console.warn(err));
 
-const getHeroeByIdAsync = (id) => {
+export const getHeroeByIdAsync = (id) => {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
 			const heroe = getHeroeById(id);
@@ -27,11 +27,11 @@ const getHeroeByIdAsync = (id) => {
 			} else {
 				reject('No se pudo encontrar el héroe');
 			}
-		}, 2000);
+		}, 1500);
 	});
 };
 
-getHeroeByIdAsync(4)
-	.then((heroe) => console.log('Heroe:', heroe))
-	.catch((err) => console.warn(err))
-	.finally(() => console.log('Promsea Finalizada'));
+// getHeroeByIdAsync(4)
+// 	.then((heroe) => console.log('Heroe:', heroe))
+// 	.catch((err) => console.warn(err))
+// 	.finally(() => console.log('Promsea Finalizada'));

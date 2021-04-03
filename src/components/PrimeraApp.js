@@ -20,8 +20,8 @@ const PrimeraApp = ({ saludo, subtitulo }) => {
 	return (
 		// Fragment == ng-container de Angular
 		<Fragment>
-			<h1>{saludo}</h1>
-			<p>{subtitulo}</p>
+			<h1> {saludo} </h1>
+			<p> {subtitulo} </p>
 			{/* <pre>{JSON.stringify(obj, null, 3)}</pre> */}
 		</Fragment>
 

@@ -3,7 +3,7 @@
 const getImagenPromesa = () => new Promise((resolve) => resolve('HOLA'));
 getImagenPromesa().then();
 
-const getImagen = async () => {
+export const getImagen = async () => {
 	try {
 		const apiKey = 'IOKixTh0CF2zErhoctHCjTKpJUJN6XAQ';
 		const resp = await fetch(
@@ -13,10 +13,11 @@ const getImagen = async () => {
 		const { url } = data.images.original;
 
 		const img = document.createElement('img');
-		img.src = url;
-		img.loading = 'lazy';
-		img.alt = 'img';
-		document.body.append(img);
+		return url;
+		// img.src = url;
+		// img.loading = 'lazy';
+		// img.alt = 'img';
+		// document.body.append(img);
 	} catch (error) {
 		// Manejo del error.
 		console.error(error);
